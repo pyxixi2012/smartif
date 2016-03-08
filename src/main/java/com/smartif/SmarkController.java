@@ -6,18 +6,14 @@ package com.smartif;
 import java.util.Date;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 
 @Controller
 public class SmarkController {
     private String message = "Hello World ,controller from string";
-    private String testmessage = "Hello World ,controller from test string";
+    private String testmessage = "Hello World ,controller from test string test";
 
     @RequestMapping("/")
     public String welcome(Map<String, Object> model) {
